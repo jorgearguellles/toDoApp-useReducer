@@ -50,7 +50,7 @@ consol.log(toDos); // { id: 1,  todo: 'Buy bread', done: false, } ; length: 1
 5. The Action will send to Reducer
 6. Reducer applied the Action and setState
 7. Then show component Update
-8. And so on so on...
+8. And ...so on so on...
 
 
 ### useState ≈ useReducer
