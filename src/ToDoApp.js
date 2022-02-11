@@ -38,6 +38,16 @@ function ToDoApp() {
     reset();
   }
 
+  const handleDelete = ( todoId ) => {
+
+    const action = {
+      type: 'delete',
+      payload: todoId,
+    }
+
+    dispatch(action);
+  }
+
   return (
     <div className="App">
       <h1>ToDo App ( {todos.length} )</h1>
@@ -53,7 +63,12 @@ function ToDoApp() {
                     className="list-group-item"
                   > 
                     <p className='text-center'> {i + 1}. { todo.description }</p>
-                    <button className='btn btn-danger'>Delete</button>
+                    <button 
+                      className='btn btn-danger'
+                      onClick={ ()=> handleDelete(todo.id) }
+                    >
+                      Delete
+                    </button>
                   </li>
                 ))
               }
