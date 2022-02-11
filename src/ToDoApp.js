@@ -4,11 +4,7 @@ import { useForm } from './Hooks/useForm';
 import './ToDoApp.css';
 
 const init = () => {
-  return [{
-  id: new Date().getTime(),
-  description: 'Learn React.js',
-  done: false,
-}]
+  return JSON.parse( localStorage.getItem('todos') ) || [];
 }
 
 function ToDoApp() {
