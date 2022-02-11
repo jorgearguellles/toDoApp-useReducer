@@ -26,8 +26,10 @@ Made with :green_heart: y:
 
 ## Screenshot App
 
-![App Screenshot]()
-![App Screenshot]()
+![App Screenshot](https://github.com/jorgearguellles/toDoApp-useReducer/blob/main/src/screenshots/0.png)
+![App Screenshot](https://github.com/jorgearguellles/toDoApp-useReducer/blob/main/src/screenshots/1.png)
+![App Screenshot](https://github.com/jorgearguellles/toDoApp-useReducer/blob/main/src/screenshots/2.png)
+![App Screenshot](https://github.com/jorgearguellles/toDoApp-useReducer/blob/main/src/screenshots/3.png)
 
 ## Feedback
 
