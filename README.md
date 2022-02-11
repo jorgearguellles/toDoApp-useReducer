@@ -13,11 +13,11 @@ This project is a Todo App by useReducer and you can do:
 [LinkedIn](https://www.linkedin.com/in/jorgeariasarguelles/) 
 - Based into React: De Cero a Experto course by Fernando Herrera [GitHub](https://github.com/Klerith) & [Udemy](https://www.udemy.com/course/react-cero-experto/)
 
-## Development Technologies used
+## Development Technologies
 
-Made with :green_heart: y:
+Made with :green_heart: using:
 
-- [Styles using Bootstrap](https://getbootstrap.com/)
+- [Bootstrap](https://getbootstrap.com/)
 - [React.js](https://es.reactjs.org)
 
 ## Demo
