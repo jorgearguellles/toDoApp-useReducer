@@ -1,4 +1,41 @@
-# useReducer
+# ToDoApp - useReducer
+
+This project is a Todo App by useReducer and you can do:
+
+- Create a task-card
+- Mark as done a task-card
+- Delete a task-card
+- See all task created every time we want
+
+## Maker
+
+- Developed by Jorge Arias Argüelles [GitHub](https://github.com/jorgearguellles) &
+[LinkedIn](https://www.linkedin.com/in/jorgeariasarguelles/) 
+- Based into React: De Cero a Experto course by Fernando Herrera [GitHub](https://github.com/Klerith) & [Udemy](https://www.udemy.com/course/react-cero-experto/)
+
+## Development Technologies used
+
+Made with :green_heart: y:
+
+- [Styles using Bootstrap](https://getbootstrap.com/)
+- [React.js](https://es.reactjs.org)
+
+## Demo
+
+[Create your first To do list!]()
+
+## Screenshot App
+
+![App Screenshot]()
+![App Screenshot]()
+
+## Feedback
+
+Open to: [@JorgeAriasArgüelles](https://www.linkedin.com/in/jorgeariasarguelles/)
+
+<hr />
+
+# Some learning process notes
 
 ## Topics
 
