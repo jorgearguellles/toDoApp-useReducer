@@ -1,4 +1,4 @@
-import { useReducer } from 'react';
+import { useReducer, useEffect} from 'react';
 import { toDoReducer } from './components/toDoReducer';
 import { useForm } from './Hooks/useForm';
 import './ToDoApp.css';
@@ -14,12 +14,13 @@ const init = () => {
 function ToDoApp() {
 
   const [ todos, dispatch ] = useReducer( toDoReducer, [], init );
-
   const [ { description }, handleInputChange, reset ] = useForm({
     description: ''
   });
 
-  console.log(description)
+  useEffect( ()=>{
+    localStorage.setItem( 'todos', JSON.stringify( todos ) )
+  },[todos])
 
   const handleSubmit = (e) => {
     e.preventDefault();
