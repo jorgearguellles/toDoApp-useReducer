@@ -9,6 +9,13 @@ const toDoReducer = ( state = [], action ) => {
       return state.filter( todo => todo.id !== action.payload );
 
     case 'pendingToggle':
+      return state.map( todo => 
+        ( todo.id === action.payload)
+          ? { ...todo, done: !todo.done } 
+          : todo
+      )
+
+    case 'pendingToggle-longWay':
       return state.map( todo => {
         if( todo.id === action.payload){
           return{
