@@ -1,42 +1,39 @@
 import { useReducer, useEffect} from 'react';
-import { TodoList } from './components/TodoList';
 import { toDoReducer } from './helpers/toDoReducer';
-import { TodoAdd } from './helpers/TodoAdd';
-import './ToDoApp.css';
 
+import { TodoList } from './components/TodoList';
+import { TodoAdd } from './components/TodoAdd.js';
+import './ToDoApp.css';
 
 const init = () => {
   return JSON.parse( localStorage.getItem('todos') ) || [];
 }
 
 function ToDoApp() {
-
   const [ todos, dispatch ] = useReducer( toDoReducer, [], init );
   
-
   useEffect( ()=>{
     localStorage.setItem( 'todos', JSON.stringify( todos ) )
   },[todos])
 
   const handleAddTodo = ( newTodo ) => {
     dispatch({
-      type: 'add',
+      type: actionTypes.ADD,
       payload: newTodo,
     });
   };
 
   const handleDelete = ( todoId ) => {
     const action = {
-      type: 'delete',
+      type: actionTypes.DELETE,
       payload: todoId,
     }
-
     dispatch(action);
   }
 
   const handleToggle = ( todoId ) => {
     dispatch({
-      type: 'pendingToggle',
+      type: actionTypes.TOGGLE,
       payload: todoId,
     });
   }
@@ -63,6 +60,12 @@ function ToDoApp() {
       </div>
     </div>
   );
+}
+
+const actionTypes = {
+  ADD: 'add',
+  DELETE: 'delete',
+  TOGGLE: 'pendingToggle'
 }
 
 export {ToDoApp};

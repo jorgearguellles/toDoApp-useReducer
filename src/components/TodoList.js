@@ -1,7 +1,6 @@
 import { TodoListItem } from "./TodoListItem"
 
 const TodoList = ( { todos, handleDelete, handleToggle } ) => {
-  console.log(todos)
   return(
     <ul className='list-group list-group-flush'>
       {

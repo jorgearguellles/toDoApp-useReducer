@@ -2,13 +2,13 @@
 const toDoReducer = ( state = [], action ) => {
 
   switch( action.type ){
-    case 'add':
+    case actionTypes.ADD:
       return [...state, action.payload]
 
-    case 'delete':
+    case actionTypes.DELETE:
       return state.filter( todo => todo.id !== action.payload );
 
-    case 'pendingToggle':
+    case actionTypes.TOGGLE:
       return state.map( todo => 
         ( todo.id === action.payload)
           ? { ...todo, done: !todo.done } 
@@ -32,5 +32,11 @@ const toDoReducer = ( state = [], action ) => {
   }
 
 };
+
+const actionTypes = {
+  ADD: 'add',
+  DELETE: 'delete',
+  TOGGLE: 'pendingToggle'
+}
 
 export { toDoReducer }
